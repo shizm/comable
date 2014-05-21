@@ -19,6 +19,20 @@ module Comable
       end
 
       module InstanceMethods
+        def images
+          []
+        end
+
+        class Image
+          attr_accessor :url
+
+          def initialize(attributes = nil)
+            attributes.each_pair do |key, value|
+              instance_variable_set("@#{key}", value)
+            end
+          end
+        end
+
         def unsold?
           stocks.activated.unsold.exists?
         end

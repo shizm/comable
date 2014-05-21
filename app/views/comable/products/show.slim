@@ -6,6 +6,10 @@
   .price
     = number_to_currency @product.price
 
+  .images
+    - @product.images.each do |image|
+      = image_tag image.url
+
 - if @product.unsold?
   .add_card
     = form_tag comable.add_cart_path do
