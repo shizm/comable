@@ -20,4 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'comable_core'
 
   s.add_dependency 'slim-rails'
+  s.add_dependency 'sass-rails'
+  s.add_dependency 'coffee-rails'
+  s.add_dependency 'compass-rails'
+  s.add_dependency 'uglifier'
 end
