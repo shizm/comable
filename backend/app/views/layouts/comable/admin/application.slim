@@ -6,4 +6,33 @@ html
     = javascript_include_tag 'comable/admin/application'
     = csrf_meta_tags
   body
+    .menu
+      ul
+        li.parent.open
+          = link_to '商品', products_path
+          ul
+            li.active
+              = link_to '検索', products_path
+            li
+              = link_to '一覧', products_path
+            li
+              = link_to 'CSV', products_path
+        li.parent
+          = link_to '在庫', products_path
+          ul
+            li
+              = link_to '検索', products_path
+            li
+              = link_to '一覧', products_path
+            li
+              = link_to 'CSV', products_path
+        li.parent
+          = link_to '在庫', products_path
+          ul
+            li
+              = link_to '検索', products_path
+            li
+              = link_to '一覧', products_path
+            li
+              = link_to 'CSV', products_path
     = yield

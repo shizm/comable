@@ -1,6 +1,8 @@
 require 'comable_core'
 
 require 'slim'
+require 'sass-rails'
+require 'compass-rails'
 
 module Comable
   module Backend
